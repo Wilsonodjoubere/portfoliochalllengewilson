@@ -1,0 +1,154 @@
+/* Configuration globale */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Syne:wght@700&display=swap');
+:root {
+  --bg-dark: #0f172a;
+  --accent-blue: #38bdf8;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: 'Inter', system-ui, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.portfolio-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 80px 0;
+  border-bottom: 1px solid #1e293b;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: var(--accent-blue);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero-section {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 200px;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.2);
+}
+
+.logos {
+  display: flex;
+  gap: 15px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  height: 40px;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 10px 0;
+  background: linear-gradient(to right, #fff, var(--accent-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 30px;
+  background: var(--accent-blue);
+  color: var(--bg-dark);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 50px;
+  transition: transform 0.3s;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+}
+
+/* Grilles (Compétences & Projets) */
+.skills-grid, .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.skill-card, .project-card {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: border 0.3s;
+}
+
+.project-card:hover {
+  border-color: var(--accent-blue);
+}
+
+.links a {
+  color: var(--accent-blue);
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* Contact */
+.contact-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-links a {
+  color: var(--text-main);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-links a:hover {
+  color: var(--accent-blue);
+}
+
+.interaction-zone {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.interaction-zone button {
+  background: transparent;
+  border: 1px solid var(--accent-blue);
+  color: var(--accent-blue);
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.footer {
+  padding: 40px 0;
+  text-align: center;
+  color: var(--text-muted);
+}
