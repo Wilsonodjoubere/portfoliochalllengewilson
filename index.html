@@ -738,7 +738,6 @@
     border-bottom: 1px solid var(--border);
     text-decoration: none;
     transition: all 0.2s;
-    group: true;
   }
   .contact-channel:last-child { border-bottom: none; }
   .contact-channel:hover { background: var(--bg3); }
@@ -1096,7 +1095,7 @@
   <p class="hero-tagline">Développeur Web Fullstack basé au Bénin — je transforme vos idées en interfaces modernes, performantes et mémorables.</p>
   <div class="hero-actions">
     <a href="#projets" class="btn-primary"><span>Voir mes projets</span> <span>→</span></a>
-    <a href="#contact" class="btn-secondary">Me contacter</a>
+    <a href="#contact-form" class="btn-secondary">Me contacter</a>
   </div>
 
   <div class="hero-scroll">Défiler</div>
@@ -1125,7 +1124,7 @@
       <blockquote class="about-quote reveal reveal-delay-3">
         "Le code est une forme d'art où la logique rencontre la créativité."
       </blockquote>
-      <a href="#contact" class="btn-primary reveal reveal-delay-4" style="display:inline-flex;margin-top:1rem;">
+      <a href="#contact-form" class="btn-primary reveal reveal-delay-4" style="display:inline-flex;margin-top:1rem;">
         <span>Discutons de votre projet</span> <span>→</span>
       </a>
     </div>
@@ -1257,30 +1256,32 @@
   </div>
 
   <div class="projects-grid">
-    <article class="project-card featured reveal" data-category="challenge">
+
+    <!-- PROJET 1 : MeetBenin — Culture béninoise -->
+    <article class="project-card featured reveal" data-category="web-app">
       <div class="project-thumb">
-        <div class="project-thumb-bg" style="background: linear-gradient(135deg, rgba(232,255,71,0.2), rgba(255,107,53,0.1))"></div>
-        <div class="project-thumb-num">01</div>
+        <div class="project-thumb-bg" style="background: linear-gradient(135deg, rgba(0,180,100,0.25), rgba(255,193,0,0.15), rgba(220,50,50,0.12))"></div>
+        <div class="project-thumb-num" style="color: rgba(255,255,255,0.07); font-size: 6rem; letter-spacing: 0.05em;">🇧🇯</div>
         <div class="project-overlay">
           <div class="project-overlay-links">
-            <a href="https://github.com/ton-pseudo" target="_blank" class="overlay-link">GitHub</a>
-            <a href="#" class="overlay-link">Live Demo ↗</a>
+            <a href="https://github.com/Wilsonodjoubere" target="_blank" class="overlay-link">GitHub</a>
+            <a href="https://meetbenin.onrender.com/" target="_blank" class="overlay-link">Live Demo ↗</a>
           </div>
         </div>
       </div>
       <div class="project-body">
         <div class="project-meta">
-          <span class="project-tag">Challenge</span>
-          <span class="project-year">2026</span>
+          <span class="project-tag" style="color: #fbbf24; border-color: rgba(251,191,36,0.3); background: rgba(251,191,36,0.07)">Culture & Patrimoine</span>
+          <span class="project-year">2025</span>
         </div>
-        <h3 class="project-title">InnerBuild Portfolio</h3>
-        <p class="project-desc">Conception et développement d'un portfolio haute performance en 7 jours dans le cadre du challenge FrontForge × InnerBuild S01. Design moderne, SEO optimisé, 100% responsive.</p>
+        <h3 class="project-title">MeetBenin</h3>
+        <p class="project-desc">Plateforme dédiée à la culture béninoise — découvrez les traditions, l'histoire, les arts et le patrimoine du Bénin à travers une interface moderne et immersive. Un voyage numérique au cœur de l'Afrique de l'Ouest.</p>
         <div class="project-stack">
-          <span class="stack-tag">React</span>
-          <span class="stack-tag">Vite</span>
-          <span class="stack-tag">CSS Modern</span>
-          <span class="stack-tag">SEO</span>
-          <span class="stack-tag">Vercel</span>
+          <span class="stack-tag">Web App</span>
+          <span class="stack-tag">Culture</span>
+          <span class="stack-tag">Bénin</span>
+          <span class="stack-tag">Patrimoine</span>
+          <span class="stack-tag">Render</span>
         </div>
       </div>
     </article>
@@ -1354,17 +1355,17 @@
         Une idée de projet, une opportunité freelance ou juste une question — je suis disponible et réponds généralement sous 24h.
       </p>
       <div class="contact-channels reveal reveal-delay-2">
-        <a href="mailto:wilson.odjoubere@example.com" class="contact-channel">
+        <a href="mailto:wodjoubere@gmail.com" class="contact-channel">
           <div class="channel-left">
             <div class="channel-icon">✉</div>
             <div>
               <div class="channel-label">Email</div>
-              <div class="channel-value">wilson.odjoubere@example.com</div>
+              <div class="channel-value">wodjoubere@gmail.com</div>
             </div>
           </div>
           <div class="channel-arrow">→</div>
         </a>
-        <a href="https://linkedin.com/in/wilson-odjoubere" target="_blank" class="contact-channel">
+        <a href="https://www.linkedin.com/in/wilson-odjoubere" target="_blank" class="contact-channel">
           <div class="channel-left">
             <div class="channel-icon">in</div>
             <div>
@@ -1374,22 +1375,22 @@
           </div>
           <div class="channel-arrow">→</div>
         </a>
-        <a href="https://wa.me/tonNumero" target="_blank" class="contact-channel">
+        <a href="https://wa.me/2290143994503" target="_blank" class="contact-channel">
           <div class="channel-left">
             <div class="channel-icon">💬</div>
             <div>
               <div class="channel-label">WhatsApp</div>
-              <div class="channel-value">Écrire un message</div>
+              <div class="channel-value">+229 01 43 99 45 03</div>
             </div>
           </div>
           <div class="channel-arrow">→</div>
         </a>
-        <a href="https://github.com/ton-pseudo" target="_blank" class="contact-channel">
+        <a href="https://github.com/Wilsonodjoubere" target="_blank" class="contact-channel">
           <div class="channel-left">
             <div class="channel-icon" style="font-size:0.7rem">GH</div>
             <div>
               <div class="channel-label">GitHub</div>
-              <div class="channel-value">ton-pseudo</div>
+              <div class="channel-value">Wilsonodjoubere</div>
             </div>
           </div>
           <div class="channel-arrow">→</div>
@@ -1398,7 +1399,8 @@
     </div>
 
     <div>
-      <div class="contact-form-wrap reveal reveal-delay-1">
+      <!-- Ancre ciblée par "Me contacter" -->
+      <div id="contact-form" class="contact-form-wrap reveal reveal-delay-1" style="scroll-margin-top: 100px;">
         <span class="form-label">// Envoyer un message direct</span>
         <div id="contactForm">
           <div class="form-row">
@@ -1456,9 +1458,9 @@
     <span style="margin-top:0.3rem;display:block">InnerBuild S01 × FrontForge</span>
   </div>
   <div class="footer-socials">
-    <a href="https://github.com/ton-pseudo" target="_blank">GitHub</a>
-    <a href="https://linkedin.com/in/wilson-odjoubere" target="_blank">LinkedIn</a>
-    <a href="mailto:wilson@exemple.com">Email</a>
+    <a href="https://github.com/Wilsonodjoubere" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/wilson-odjoubere" target="_blank">LinkedIn</a>
+    <a href="mailto:wodjoubere@gmail.com">Email</a>
   </div>
   <div class="footer-badge">#InnerBuild · S01</div>
 </footer>
@@ -1600,7 +1602,6 @@
   ];
   let tIdx = 0, cIdx = 0, deleting = false;
   const taglineEl = document.querySelector('.hero-tagline');
-  const baseText = '';
 
   function typeEffect() {
     const current = taglines[tIdx];
